@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root 'home#show', via: :get
   resource :dashboard, only: [:show]
+  resource :search, only: [:show]
   resources :posts, only: [:show]
   resources :users, only: [:show, :index] do
     post 'follow' => 'following_relationships#create'
