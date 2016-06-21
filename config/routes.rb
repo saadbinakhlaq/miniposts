@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   root 'home#show', via: :get
   resource :dashboard, only: [:show]
   resources :posts, only: [:show]
-  resources :users, only: [:show] do
+  resources :users, only: [:show, :index] do
     post 'follow' => 'following_relationships#create'
+    delete 'follow' => 'following_relationships#destroy'
   end
   resources :text_posts, only: [:create]
   resources :photo_posts, only: [:create]

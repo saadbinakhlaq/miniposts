@@ -35,3 +35,9 @@ en:
   users:
     show:
       follow: 'follow'
+      unfollow: 'unfollow'
+  following_relationships:
+    create:
+      following: 'Following User'
+    destroy:
+      not_following: 'Not following User'
