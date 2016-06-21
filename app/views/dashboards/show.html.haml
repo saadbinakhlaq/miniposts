@@ -1,9 +1,9 @@
-= form_for @text_post do |f|
+= form_for @dashboard.new_text_post do |f|
   = f.text_field :body, placeholder: t('.content')
   = f.submit t('.submit')
 
-= form_for @photo_post do |f|
+= form_for @dashboard.new_photo_post do |f|
   = f.file_field :image
   = f.submit t('.submit')
 
-= render @posts
+= render @dashboard.timeline
