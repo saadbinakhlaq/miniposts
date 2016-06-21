@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'haml'
 gem 'puma'
+gem 'carrierwave'
 
 group :development, :test do
   gem 'haml-rails'

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :posts, only: [:show]
   resources :users, only: [:show]
   resources :text_posts, only: [:create]
+  resources :photo_posts, only: [:create]
 end

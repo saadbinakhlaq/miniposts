@@ -2,4 +2,8 @@
   = f.text_field :body, placeholder: t('.content')
   = f.submit t('.submit')
 
+= form_for @photo_post do |f|
+  = f.file_field :image
+  = f.submit t('.submit')
+
 = render @posts

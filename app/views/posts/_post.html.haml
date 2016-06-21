@@ -1,4 +1,5 @@
 = div_for post do
+  = gravatar post.user
   = link_to post.user.email, post.user
   = t('.posted')
   = render post.content
