@@ -6,7 +6,7 @@ module PostsHelper
     image_tag("http://gravatar.com/avatar/#{digest}?s=48")
   end
 
-  def shouterize(text)
+  def min_post_representation(text)
     link_hashtags(strip_tags(text))
   end
 
