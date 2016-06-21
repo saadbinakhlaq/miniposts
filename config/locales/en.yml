@@ -32,3 +32,6 @@ en:
       posted: 'posted'
     create:
       no_post: 'Could not post'
+  users:
+    show:
+      follow: 'follow'
