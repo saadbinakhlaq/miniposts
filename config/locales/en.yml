@@ -20,4 +20,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  shared:
+    navbar:
+      signout: 'Sign Out'
+  dashboards:
+    show:
+      content: 'Place your content here'
+      submit: 'Submit'
+  posts:
+    post:
+      posted: 'posted'
+    create:
+      no_post: 'Could not post'

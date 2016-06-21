@@ -1,0 +1,7 @@
+%nav
+  %ul
+    - if current_user
+      %li
+        = link_to current_user.email, dashboard_path
+      %li
+        = link_to t('.signout'), destroy_user_session_path, method: :delete
