@@ -2,16 +2,43 @@
   float: right;
 }
 
+$link: #3b8bba;
+$orange: #f28c4b;
+$body-text: #777;
+
 a {
-  color: #3b8bba
+  color: $link;
 }
 
 body {
-  color: #777
+  color: $body-text;
+}
+
+.notice, .alert {
+  text-align: center;
+}
+
+.notice {
+  color: #12a1c0;
 }
 
 .content {
   margin-top: 70px;
+}
+
+.menu {
+  background: #2d3e50;
+  padding: 0.5em;
+  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+
+  .pure-menu-heading {
+    color: $orange;
+  }
+}
+
+.search-form {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .post {
