@@ -12,6 +12,7 @@ gem 'devise'
 gem 'haml'
 gem 'puma'
 gem 'carrierwave'
+gem 'purecss-rails'
 
 group :development, :test do
   gem 'haml-rails'

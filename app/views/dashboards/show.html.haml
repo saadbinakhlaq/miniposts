@@ -1,9 +1,12 @@
-= form_for @dashboard.new_text_post do |f|
-  = f.text_field :body, placeholder: t('.content')
-  = f.submit t('.submit')
+= form_for @dashboard.new_text_post, html: { class: 'pure-form pure-form-stacked' } do |f|
+  %fieldset
+    = f.text_area :body, placeholder: t('.content'), class: 'post-body'
 
-= form_for @dashboard.new_photo_post do |f|
-  = f.file_field :image
-  = f.submit t('.submit')
+    = f.submit t('.submit'), class: 'pure-button pure-button-primary'
+
+= form_for @dashboard.new_photo_post, html: { class: 'pure-form' } do |f|
+  = f.label :image
+  = f.file_field :image, class: 'input-file'
+  = f.submit t('.submit'), class: 'pure-button pure-button-primary'
 
 = render @dashboard.timeline

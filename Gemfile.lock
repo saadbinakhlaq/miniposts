@@ -118,6 +118,8 @@ GEM
     pry-rails (0.3.4)
       pry (>= 0.9.10)
     puma (3.4.0)
+    purecss-rails (0.6.0)
+      railties (>= 3.2.6, < 5)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -220,6 +222,7 @@ DEPENDENCIES
   pg (~> 0.15)
   pry-rails
   puma
+  purecss-rails
   rails (= 4.2.6)
   rspec-rails (~> 3.4)
   sass-rails (~> 5.0)

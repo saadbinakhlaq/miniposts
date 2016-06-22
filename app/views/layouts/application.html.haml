@@ -2,9 +2,10 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}/
     %title Miniposts
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
     = csrf_meta_tags
   %body{ class: namespace_css }
     - if notice
@@ -16,4 +17,8 @@
     = render 'shared/navbar'
     = render 'shared/search'
 
-    = yield
+    .pure-g.content
+      .pure-u-1-5
+      .pure-u-3-5  
+        = yield
+      .pure-u-1-5

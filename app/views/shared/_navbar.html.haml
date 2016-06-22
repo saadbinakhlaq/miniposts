@@ -1,7 +1,8 @@
-%nav
-  %ul
+%nav.pure-menu.pure-menu-horizontal
+  %span.pure-menu-heading Miniposts
+  %ul.pure-menu-list.right
     - if current_user
-      %li
-        = link_to current_user.email, dashboard_path
-      %li
-        = link_to t('.signout'), destroy_user_session_path, method: :delete
+      %li.pure-menu-item
+        = link_to current_user.email, dashboard_path, class: 'pure-menu-link'
+      %li.pure-menu-item
+        = link_to t('.signout'), destroy_user_session_path, method: :delete, class: 'pure-menu-link'

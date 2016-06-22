@@ -1,6 +1,6 @@
 = div_for post do
   = gravatar post.user
   = link_to post.user.email, post.user
-  = t('.posted')
+  %span= t('.posted')
   = render post.content
-  = link_to time_ago_in_words(post.created_at), post
+  = link_to time_ago_in_words(post.created_at), post, class: 'timing-link'
