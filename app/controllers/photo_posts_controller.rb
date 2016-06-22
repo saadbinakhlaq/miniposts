@@ -17,6 +17,6 @@ class PhotoPostsController < ApplicationController
   end
 
   def photo_posts_params
-    params.require(:photo_post).permit(:image)
+    params.fetch(:photo_post, {}).permit(:image)
   end
 end

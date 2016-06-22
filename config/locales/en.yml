@@ -41,3 +41,9 @@ en:
       following: 'Following User'
     destroy:
       not_following: 'Not following User'
+  text_posts:
+    create:
+      no_post: 'No post present, minimum length should be 20 characters'
+  photo_posts:
+    create:
+      no_post: 'No file was selected for upload'
