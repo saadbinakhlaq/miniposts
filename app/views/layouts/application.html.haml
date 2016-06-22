@@ -9,9 +9,7 @@
     = csrf_meta_tags
   %body{ class: namespace_css }
     = render 'shared/navbar'
-    .search-form
-      - if current_user
-        = render 'shared/search'
+
     - if notice
       %p.notice= notice
 
@@ -21,5 +19,8 @@
     .pure-g.content
       .pure-u-1-5
       .pure-u-3-5  
+        .search-form
+          - if current_user
+            = render 'shared/search'
         = yield
       .pure-u-1-5

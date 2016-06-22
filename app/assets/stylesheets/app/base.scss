@@ -5,13 +5,23 @@
 $link: #3b8bba;
 $orange: #f28c4b;
 $body-text: #777;
+$bg-color: #f5f8fa;
+$border: #e1e8ed;
+$white: white;
+$menu: #2d3e50;
+
+body {
+  color: $body-text;
+  background: $bg-color; 
+}
 
 a {
   color: $link;
 }
 
-body {
-  color: $body-text;
+.follow_button { 
+  background: rgb(66, 184, 221); 
+  color: $white;
 }
 
 .notice, .alert {
@@ -27,22 +37,54 @@ body {
 }
 
 .menu {
-  background: #2d3e50;
+  background: $menu;
   padding: 0.5em;
   box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 
   .pure-menu-heading {
     color: $orange;
   }
+
+  .pure-menu-link {
+    color: $orange;
+
+    &:hover {
+      background: $menu;
+      color: $link;
+    }
+  }
 }
 
 .search-form {
   text-align: center;
-  margin-top: 10px;
+  margin-bottom: 10px;
+
+  input[type=text] {
+    width: 88%;
+  }
 }
 
 .post {
   margin-bottom: 20px;
+  min-height: 70px;
+  background: $white;
+
+  .user-profile, .post-content {
+    position: relative;
+  }
+
+  .timing-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .user-link {
+    position: absolute;
+    font-size: 12px;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .timing-link {
